@@ -54,6 +54,22 @@ h1 {
   background-color: #e0e0e0;
   border-radius: 5px;
 }
+.shake-error {
+  animation: shakeAnimation 0.5s;
+  border-color: red;
+}
+
+@keyframes shakeAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-10px);
+  }
+  40%, 80% {
+    transform: translateX(10px);
+  }
+}
 
 .workout-form input[type="text"],
 .workout-form input[type="number"] {
@@ -62,6 +78,9 @@ h1 {
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+.workout-form input[type="number"]{
+  margin-left: 20px;
 }
 
 .workout-form select {
