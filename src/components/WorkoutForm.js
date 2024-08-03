@@ -16,7 +16,7 @@ const WorkoutForm = ({ addWorkout }) => {
 
   return (
     <form className="workout-form" onSubmit={handleSubmit}>
-      <input
+      <input  class="shake"
         type="text"
         placeholder="User Name"
         value={userName}
@@ -36,7 +36,7 @@ const WorkoutForm = ({ addWorkout }) => {
         <option value="Weightlifting">Weightlifting</option>
       </select>
       <input
-        type="number"
+        type="number"  class="shake"
         placeholder="Minutes"
         value={workoutMinutes}
         onChange={(e) => setWorkoutMinutes(e.target.value)}

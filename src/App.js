@@ -1,11 +1,11 @@
-// src/App.js
+
 import React, { useState } from "react";
 import WorkoutForm from "./components/WorkoutForm";
 import WorkoutList from "./components/WorkoutList";
 import SearchFilter from "./components/SearchFilter";
 import Pagination from "./components/Pagination";
 import WorkoutChart from "./components/WorkoutChart";
-import './App.css'; // Import the CSS file
+import './App.css'; 
 
 const App = () => {
   const [workouts, setWorkouts] = useState([]);
@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Health Challenge Tracker</h1>
+      <h1  class="color-change">Health Challenge Tracker</h1>
       <WorkoutForm addWorkout={addWorkout} />
       <SearchFilter workouts={workouts} setWorkouts={setWorkouts} />
       <WorkoutList workouts={currentWorkouts} />
